@@ -4,14 +4,22 @@ import BackgroundImages from '../components/BackgroundImages'
 import Header from '../components/Header'
 
 const Container = styled.div`
-  padding: 4em;
-  background: papayawhip;
+    position: relative;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-rows:15vh 85vh;
+    
 `;
 
 const Signup = () => {
   return (
   <Container>
     <BackgroundImages/>
+    <div className="content">
     <Header/>
     <div className="body flex column a-center j-center">
         <div className="text flex column">
@@ -28,8 +36,9 @@ const Signup = () => {
         </div>
         <button>Login</button>
     </div>
+    </div>
   </Container>
   )
 }
 
-export default Signup
+export default Signup;
