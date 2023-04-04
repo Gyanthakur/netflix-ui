@@ -23,12 +23,14 @@ function Netflix() {
 
   useEffect(() => {
     dispatch(getGenres());
+     // eslint-disable-next-line 
   }, []);
 
   useEffect(() => {
     if (genresLoaded) {
       dispatch(fetchMovies({ genres, type: "all" }));
     }
+     // eslint-disable-next-line 
   }, [genresLoaded]);
 
   onAuthStateChanged(firebaseAuth, (currentUser) => {
@@ -69,6 +71,7 @@ function Netflix() {
         </div>
       </div>
       <Slider movies={movies} />
+      
     </Container>
   );
 }
