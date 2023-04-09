@@ -17,7 +17,8 @@ const App = () => {
      <Route exact path="/player" element={<Player/>} />
      <Route exact path="/movies" element={<Movies/>} />
      <Route exact path="/tv" element={<TVShows/>} />
-     <Route exact path="/list" element={<UserListedMovies/>} />
+     {/* <Route exact path="/tv" element={<TVShows/>} /> */}
+     <Route exact path="/mylist" element={<UserListedMovies/>} />
      <Route exact path="/" element={<Netflix/>} />
     </Routes>
     
